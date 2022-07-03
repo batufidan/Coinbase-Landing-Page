@@ -18,7 +18,7 @@ export default function AboutUs() {
             </div>
             <div className="flex gap">
                 <div className="info flex column gap a-start j-center">
-                <p className="subdue">Easy To Learn Platform –</p>
+                <p className="subduee">Easy To Learn Platform </p>
                 <p className="subdue">
                 We won’t ask you to link to your bank accounts, we just want
                 everyone to have the opportunity to understand the potential of
@@ -39,5 +39,14 @@ export default function AboutUs() {
 
 
 const Section = styled.div`
+    .info {
+        margin: 3rem;
+    }
+
+    .subduee {
+        font-size: 2rem;
+        font-weight: bold;  
+        color: #ffffff;
+    }
 
 `;

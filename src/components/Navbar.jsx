@@ -21,8 +21,8 @@ export default function Navbar() {
         </ul>
     </div>
     <div className="auth flex gap-1">
-        <Button text="Sign In" subduedButton />
-        <Button text="Sign Up"  />
+        <Button text="Login" subduedButton />
+        <Button text="Sign In"  />
     </div>
   </Nav>
 }

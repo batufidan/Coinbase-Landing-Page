@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import card from "../images/card.png";
-import signupBackground from "../images/card.png";
+import signupBackground from "../images/signupBackground.png";
 
 
 export default function Signup() {
@@ -37,4 +37,18 @@ const Section = styled.section`
             height: 100%;
         }
     }
+
+    
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+    margin-bottom: 2rem;
+    .content {
+      padding: 2rem;
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+    .image {
+      display: none;
+    }
+  }
 `;

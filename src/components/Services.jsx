@@ -53,8 +53,10 @@ export default function Services() {
 
 const Section = styled.section`
   .services {
+    .image{
     padding: 0 5rem;
     gap: 10rem;
+    }
     .service{
       .title {
         font-size: 1.5rem;

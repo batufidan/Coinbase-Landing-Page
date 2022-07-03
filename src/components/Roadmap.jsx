@@ -65,7 +65,6 @@ export default function Roadmap() {
       icon: <RiBitCoinFill />,
     },
   ];
-
   return (
     <Section className="flex column gap">
       <div className="title-container text-center">
@@ -78,49 +77,60 @@ export default function Roadmap() {
       </div>
       <div className="roadmap flex gap">
         {data.map(({ date, name, description, icon }, index) => {
-                return (
-                    <div className="map flex column gap-1 a-start" key={index}>
-                      <div className="icon flex j-center a-center">{icon}</div>
-                      <h3 className="date">{date}</h3>
-                      <h3 className="name">{name}</h3>
-                      <p className="description subdue">{description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </Section>
+          return (
+            <div className="map flex column gap-1 a-start" key={index}>
+              <div className="icon flex j-center a-center">{icon}</div>
+              <h3 className="date">{date}</h3>
+              <h3 className="name">{name}</h3>
+              <p className="description subdue">{description}</p>
+            </div>
           );
-        }
+        })}
+      </div>
+    </Section>
+  );
+}
+
 const Section = styled.section`
-    .roadmap {
-        overflow-x: scroll;
-        overflow-y: hidden;
-        padding-bottom: 4rem;
-        &::-webkit-scrollbar {
-            height: 1px;
+  .roadmap {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 4rem;
+    .map {
+      min-width: 300px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 1.3rem;
+        left: 1rem;
+        height: 100%;
+        width: 120%;
+        z-index: -1;
+        border-top: 3px solid white;
+        opacity: 0.5;
+      }
+      .icon {
+        background-color: var(--roadmap-icon);
+        padding: 0.5rem;
+        border-radius: 100%;
+        svg {
+          font-size: 2rem;
         }
-        .map {
-            min-width: 300px;
-            position: relative;
-            &::after {
-                content: "";
-                position: absolute;
-                top: 1.3rem;
-                left: 1rem;
-                height: 100%;
-                width: 120%;
-                z-index: -1;
-                border-top: 3px solid white;
-                opacity: 0.5;
-            }
-            .icon {
-                background-color: var(--roadmap-icon);
-                padding: 0.5rem;
-                border-radius: 100%;
-                svg{
-                    font-size:2rem;
-                }
-            }
-        }
+      }
     }
+  }
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    padding: 2rem;
+    .roadmap {
+      overflow: initial;
+      padding-bottom: 2rem;
+      .map {
+        min-width: 100%;
+      }
+      .map::after {
+        border-top: none;
+      }
+    }
+  }
 `;

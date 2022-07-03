@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
           <div className="info">
             <span>T : +1-202-555-0184</span>
-            <span>E : hello@cryptoz.com</span>
+            <span>E : hello@batuhan.com</span>
           </div>
           <div className="social-icons flex gap-2">
             {socialIcons.map((icon, index) => {
@@ -90,7 +90,7 @@ export default function Footer() {
       </div>
       <div className="lower-footer flex a-center j-between gap">
         <div className="col1">
-          <span>&copy; Crypto a Theme by Kishan Sheth</span>
+          <span>&copy; This website made by Batuhan Fidan</span>
         </div>
         <div className="col2 flex a-center gap">
           <span>Privacy Policy</span>
