@@ -2,7 +2,8 @@
 
 
 
-Uploading coinbase landing page video.mp4…
+
+https://user-images.githubusercontent.com/98849270/177143966-b8fba123-4768-4a7d-b9ad-ea6322292eba.mp4
 
 
 
