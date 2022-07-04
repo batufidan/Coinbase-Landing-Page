@@ -1,6 +1,9 @@
 # Getting Started with Create React App
 
-https://user-images.githubusercontent.com/98849270/177036604-dceec0cc-8158-4132-9071-6e78f07c513b.mp4
+
+
+Uploading coinbase landing page video.mp4…
+
 
 
 
